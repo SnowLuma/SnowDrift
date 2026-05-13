@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-family: "Aptos", "Segoe UI Variable Text", "Noto Sans SC", sans-serif;
+  --bg: #f7f1e8;
+  --ink: #102a43;
+  --panel: rgba(255, 252, 247, 0.78);
+  --line: rgba(15, 23, 42, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(249, 115, 22, 0.12), transparent 32%),
+    radial-gradient(circle at top right, rgba(13, 148, 136, 0.12), transparent 28%),
+    linear-gradient(180deg, #fbf7f0 0%, var(--bg) 100%);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.02) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45), transparent 85%);
+}
+
+.panel {
+  border: 1px solid var(--line);
+  border-radius: 2rem;
+  background: var(--panel);
+  padding: 1.5rem;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.08);
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #0f766e;
+}
+
+.command-chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 118, 110, 0.18);
+  background: rgba(255, 255, 255, 0.82);
+  padding: 0.65rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #134e4a;
+  box-shadow: 0 10px 30px rgba(15, 118, 110, 0.08);
+}
