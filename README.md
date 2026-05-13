@@ -1,4 +1,3 @@
-````markdown
 # SnowDrift
 > Any Model. Any Protocol.
 
@@ -135,4 +134,3 @@ Any Model.
 Any Protocol.
 Without Flattening Semantics.
 ```
-````
