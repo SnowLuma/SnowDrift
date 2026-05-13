@@ -1,0 +1,11 @@
+{
+  "name": "snowdrift",
+  "version": "0.1.0",
+  "description": "SnowDrift WorkSpace",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.28.0",
+  "engines": {
+    "node": ">=22"
+  }
+}
