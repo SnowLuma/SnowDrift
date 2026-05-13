@@ -11,4 +11,7 @@
 - [ ] Basic Struct (基础结构创建)
 
 ## RoadMap
-- [ ] 支持每一个Provider单独配置各项参数
+- [ ] 支持每一个Provider单独配置各项参数 包括Adapter/Core行为
+
+## 目标
+- [ ] 在100行内能够实现大部分Adapter(逆向去除无关协议转换部分200行内)
